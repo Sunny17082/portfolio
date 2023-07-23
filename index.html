@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sunny Prasad</title>
+</head>
+<body>
+
+    <!-- header  -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row-header">
+                <div class="header-col1">
+                    <div class="header-text">
+                        <p>Hello, I'm Sunny Prasad</p>
+                        <h1>I'm a <span class="auto-type"></span> <br> From India</h1>
+                    </div>
+                </div>
+                <div class="header-col2">
+                    <img src="images/loader.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/man.gif" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequuntur corrupti architecto asperiores odio. Ipsam nemo excepturi veniam quam itaque, neque maiores ipsa vitae voluptatem quo vel suscipit, ipsum quaerat?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span> <br>Web app Development</li>
+                            <li><span>App Development</span> <br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Hackerank</span> <br>5 star c++</li>
+                            <li><span>Leetcode</span> <br>50 questions</li>
+                            <li><span>Codechef</span> <br>2 star</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Techno Main Salt Lake</span> <br>2021-present <br> B.Tech CSE(AI&ML) - 9.05</li>
+                            <li><span>M.C. Kejriwal Vidyapeeth</span> <br>2019-2021 <br> Science - 91.5%</li>
+                            <li><span>Stepping Stone School (High)</span> <br>2013-2019 <br>91%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit consectetur ullam itaque nam deserunt.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit consectetur ullam itaque nam deserunt.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit consectetur ullam itaque nam deserunt.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> sunnyprasad1708@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9748358579</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script>
+        var typed=new Typed(".auto-type",{
+            strings: ["Gamer","Coder","Developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+
+</body>
+</html>
